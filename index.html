@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+
+    <div class="error"></div>
+        <div class="navbar-left">
+            <div class="links">
+                <a class="popular" href="popular.html?page=popular">Popular Movies</a>
+                <a class="topRated" href="toprated.html?page=toprated">Top Rated Movies</a>
+            </div>
+            <div class="navbar-right">
+                
+            </div>
+        </div>    
+        <div class="search-form">
+            <form id="search-movie">
+                <label for="search-movie-input">Search by movie title:</label>
+                <input type="text" id="search-movie-input" name="search-movie-input">
+                <input type="checkbox" id="movieSearch" name="searchType" checked>
+                <label for="movieSearch">Movies</label>
+                <input type="checkbox" id="actorSearch" name="searchType">
+                <label for="actorSearch">Actors</label>     
+                <button>Search</button>
+            </form>
+        </div>
+        <div class="flex-bottom">
+            <div>
+                <ul id="search-result"></ul>
+            </div>
+        </div>
+        
+</body>
+</html>
